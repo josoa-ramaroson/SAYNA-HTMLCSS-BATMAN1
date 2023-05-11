@@ -129,7 +129,7 @@ article.welcome-banner{
 }
 article#batman-cinema{
     margin: 0 102px;
-    padding:30px 100px 0 100px;
+    padding:50px 100px 180px 100px;
     border-left: 3.5px #c8c6ca30 solid ;
     border-right: 3.5px #c8c6ca30 solid ;
 }
@@ -138,6 +138,10 @@ article h2{
     font-size:30px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    
+}
+article h2{
+    position: relative;
 }
 article#batman-cinema p, article#nemesis p{
     text-align: justify;
@@ -162,4 +166,23 @@ article#batman-cinema p, article#nemesis p{
 }
 .bat-image:hover{
     transform: scale(1.2);
+}
+
+article#nemesis{
+    margin: 0 102px;
+    padding:30px 100px 180px 100px;
+    border-left: 3.5px #c8c6ca30 solid ;
+    border-right: 3.5px #c8c6ca30 solid ;
+}
+article#nemesis h2 #bat-truc{
+    height:120px; 
+    position:absolute;
+    top:-60px;
+    left:100px;
+}
+article#nemesis h2 #bat-droite{
+    height:300px; 
+    position:absolute;
+    top:-300px;
+    right:-208px;
 }
