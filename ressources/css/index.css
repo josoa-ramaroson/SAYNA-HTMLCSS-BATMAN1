@@ -7,33 +7,36 @@
     src: url('../font/SpaceGrotesk.ttf');
 }
 *{
+    padding:0;
     margin:0  ;
-    padding:0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background-color: #000;
-    color:white;
     padding:0;
+    color:white;
+    background-color: #000;
+    font-family: Grotesk;
 }
 
-header{
+header#header{
+    height:123vh;
     background-image: url("../image/illustrations/Bathome1.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    height:123vh;
 }
 
 .nav-bar{
     margin: 0 102px;
     padding: 0 60px 0 60px;
-    height: 140px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 18%;
     border-bottom: 3.5px #c8c6ca30 solid ;
     border-left: 3.5px #c8c6ca30 solid ;
     border-right: 3.5px #c8c6ca30 solid ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .nav-bar a img{
     height:40px;
@@ -47,24 +50,24 @@ header{
 .nav-item{  
     padding:0 2px;
     height: 32px;
-    list-style-type: none;
     font-size: 28px;
+    list-style-type: none;
     transition:all 0.5s;
 
 }
 .nav-item a{
     color:white;
-    text-decoration:none;
     font-family: rajdhani;
     font-weight: 600;
+    text-decoration:none;
     letter-spacing: 1px;
 }
 .nav-item:hover{
     border-bottom: solid #ffff00 2px;
 }
 .nav-item.active {
-    border-bottom: solid #ffff00 2px;
     color: #ffff00;
+    border-bottom: solid #ffff00 2px;
 }
 .nav-item.active a{
     color: #ffff00;
@@ -73,20 +76,21 @@ header{
 article.welcome-banner{
     margin:0 102px;
     /* height: 100%; */
-    height:80%;
+    height:81.7%;
     border-left: 3.5px #c8c6ca30 solid ;
     border-right: 3.5px #c8c6ca30 solid ;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    gap: 60px;
+    gap: 75px;
     align-items: center;
 }
 .intro-text{
-    max-width: 700px;
+    max-width: 800px;
     font-size:23px;
     text-align: center;
     font-family: Grotesk;
+    line-height:32px ;
 }
 .intro-text strong{
     font-size: 30px;
@@ -104,11 +108,58 @@ article.welcome-banner{
     border:none;
     text-transform: uppercase;
     background-color:transparent;
-    background-image: linear-gradient(to right,#eddebf98 25%,#89000990 70%);
+    background-image: linear-gradient(to right,#eddebf68 25%,#89000956 70%);
     background-size: 250%;
     background-position: 50%;
     cursor: pointer;
 }
 #btn-group a .btn-top-home:hover{
-    background-image: linear-gradient(to right,#eddebfdc 25%,#890009cc 70%);
+    background-image: linear-gradient(to right,#eddebfbc 25%,#890009b2 70%);
+}
+
+#sticky-section{
+    position: fixed;
+    top:50vh;
+    right:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:24px;
+}
+article#batman-cinema{
+    margin: 0 102px;
+    padding:30px 100px 0 100px;
+    border-left: 3.5px #c8c6ca30 solid ;
+    border-right: 3.5px #c8c6ca30 solid ;
+}
+article h2{
+    font-family:Grotesk;
+    font-size:30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+article#batman-cinema p, article#nemesis p{
+    text-align: justify;
+    font-size: 21px;
+    font-family: Grotesk;
+    line-height: 30px;
+    box-sizing: border-box;
+    max-width: 85%;
+}
+
+#batman-cinema-image{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#batman-cinema-image figcaption{
+    margin-top:20px;
+    text-align: center;
+}
+.bat-image{
+    transition: all ease-in-out 0.3s;
+}
+.bat-image:hover{
+    transform: scale(1.2);
 }
