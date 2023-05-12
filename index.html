@@ -65,13 +65,13 @@
             <a href="#header">
                 <img src="ressources/image/logos/logo_bat_flèche.png" alt="haut du page">
             </a>
-            <a href="facebook.com">
+            <a href="https://www.facebook.com/" target="_blank">
                 <img src="ressources/image/logos/icon_facebook.png" alt="page facebook">
             </a>
-            <a href="instagram.com">
+            <a href="https://www.instagram.com/" target="_blank">
                 <img src="ressources/image/logos/icon_ig.png" alt="page instagram">
             </a>
-            <a href="twiter.com">
+            <a href="https://www.twitter.com/" target="_blank">
                 <img src="ressources/image/logos/icon_tw.png" alt="page twiter">
             </a>
             <a href="#footer">
@@ -225,7 +225,7 @@
         <h2>multimédia</h2><br><br><br>
         <!--le slider se situe ici-->
         <section id="multimedia-slider">
-            <img src="ressources/image/logos/icon_flèche_1.png" alt="previous">
+            <img class="fleche-1" src="ressources/image/logos/icon_flèche_1.png" alt="previous">
             <div id="slider-contener">
                <div class="une-slide">
                 <img src="/ressources/image/illustrations/Bathome_ba1.png" alt="début de batman">
@@ -246,12 +246,9 @@
                </div>
 
             </div>
-            <img src="ressources/image/logos/icon_flèche_2.png" alt="next">
+            <img class="fleche-2" src="ressources/image/logos/icon_flèche_2.png" alt="next">
         </section>
         <section id="bande-annonce">
-            <!-- <video  preload="metadata" poster="/ressources/image/illustrations/Bathome_ba2.png" >
-                <source src="/ressources/video/bande-annonce.mp4"  type="video/mp4">
-            </video> -->
             <video poster="/ressources/image/illustrations/Bathome_ba2.png" controls="controls" >
                 <source src="/ressources/video/bande-annonce.mp4">
             </video>
@@ -259,17 +256,78 @@
     </article>
     <article id="formulaire-contact">
         <!-- à remplir aussi-->
+        <h2 id="formulaire">prenons contact</h2>
+        <form >
+            <h3><label for="email">ADDRESS EMAIL</label></h3>
+            <input type="email" name="email" id="email">
+            <h3>NEWSLETTER</h3>
+            <label for="recevoir-actualite">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de 
+                Batman :
+            </label>
+            <input type="checkbox" name="actualite" id="recevoir-actualite">
+            <br>
+            <select name="frequence" id="frequence" >
+                <option value="" selected>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
+                <option value="52">Une fois par semaine</option>
+                <option value="24">Une fois toutes les deux semaines (2 fois par mois) </option>
+                <option value="12">Une fois par moi </option>
+                <option value="4">Une fois tous les trois mois </option>
+                <option value="2">Une fois tous les six mois </option>
+            </select>
+            <label id="type-de-news">Souhaitez vous recevoir des news</label>
+            <div id="form-btn-news">
+                <div class="choix-news">Des films</div>
+                <div class="choix-news">Des comics</div>
+                <div class="choix-news">De tout</div>
+            </div>
+            <h3>MESSAGE</h3>
+            <input type="text" placeholder="Laissez un commentaire pour la communauté"> 
+            <button type="submit" id="btn-top-home">CONFIRMER</button>      
+        </form>
     </article>
 
     <article id="citation-slider">
         <!--à remplir aussi-->
+        <img src="/ressources/image/logos/icon_guillemets_1.png" alt="guellemet">
+        <section id="citation-slider-contener">
+            <article id="citation">
+                <blockquote>« La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</blockquote>
+                <p>The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)</p>
+            </article>
+            <section id="bouton-slider">
+                <span class="point-next"></span>
+                <span class="point-next"></span>
+                <span class="point-next"></span>
+                <span class="point-next active"></span>
+                <span class="point-next"></span>
+                <span class="point-next"></span>
+                <span class="point-next"></span>
+            </section>
+        </section>
+        <img src="/ressources/image/logos/icon_guillemets_2.png" alt="guellemet">
     </article>
 </main>
 
 <!--footer-->
 
 <footer id="footer">
-<!--à remplir-->        
+<!--à remplir-->      
+<p><img src="/ressources/image/logos/icon_WB.png" alt="Logo WB"> Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & 
+    Snyder & Reeves</p>  
+    <div class="group-logo">
+        <a href=""><img src="/ressources/image/logos/logo_sayna_white.png" alt="Logo SAYNA"></a>
+        <a href=""><img src="/ressources/image/logos/icon_x.png" alt="X"></a>
+        <a href=""><img src="/ressources/image/logos/icon_DC.png" alt="DC"></a>
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="ressources/image/logos/icon_facebook.png" alt="page facebook">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="ressources/image/logos/icon_ig.png" alt="page instagram">
+        </a>
+        <a href="https://www.twitter.com/" target="_blank">
+            <img src="ressources/image/logos/icon_tw.png" alt="page twiter">
+        </a>
+    </div>
 </footer>
 </body>
 </html>

@@ -30,7 +30,7 @@ header#header{
 .nav-bar{
     margin: 0 102px;
     padding: 0 60px 0 60px;
-    height: 15%;
+    height: 18%;
     border-bottom: 3.5px #c8c6ca30 solid ;
     border-left: 3.5px #c8c6ca30 solid ;
     border-right: 3.5px #c8c6ca30 solid ;
@@ -42,7 +42,7 @@ header#header{
     height:40px;
 }
 .nav-bar a img:hover{
-   filter: invert(100%);
+   filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(1300%) hue-rotate(357deg);
 }
 .nav-menu{
     display:flex;
@@ -63,14 +63,14 @@ header#header{
     letter-spacing: 1px;
 }
 .nav-item:hover{
-    border-bottom: solid #ffff00 2px;
+    border-bottom: solid #fff 2px;
 }
 .nav-item.active {
-    color: #ffff00;
-    border-bottom: solid #ffff00 2px;
+    color: #fff;
+    border-bottom: solid #fff 2px;
 }
 .nav-item.active a{
-    color: #ffff00;
+    color: #fff;
 }
 
 article.welcome-banner{
@@ -82,7 +82,7 @@ article.welcome-banner{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    gap: 75px;
+    gap: 70px;
     align-items: center;
 }
 .intro-text{
@@ -99,7 +99,7 @@ article.welcome-banner{
     display: flex;
     gap:50px;
 }
-#btn-group a .btn-top-home{
+#btn-group a .btn-top-home,#btn-top-home{
     width: 250px;
     height:60px;
     color:white;
@@ -113,7 +113,7 @@ article.welcome-banner{
     background-position: 50%;
     cursor: pointer;
 }
-#btn-group a .btn-top-home:hover{
+#btn-group a .btn-top-home:hover,#btn-top-home:hover{
     background-image: linear-gradient(to right,#eddebfbc 25%,#890009b2 70%);
 }
 
@@ -127,6 +127,9 @@ article.welcome-banner{
     justify-content: center;
     gap:24px;
     z-index:100;
+}
+#sticky-section a:hover img{
+   filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(1300%) hue-rotate(357deg);
 }
 article#batman-cinema,article#multimedia{
     margin: 0 102px;
@@ -222,12 +225,12 @@ section#multimedia-slider{
     align-items: center;
 }
 #slider-contener{
-    max-width:600px;
+    max-width:650px;
     height:300px;
     background-image: linear-gradient(150deg, #EDDEBF, #19587D 50%);
     background-size: 200%;
     border: #c4c4c46c solid 0.8px;
-    border-radius:10px;
+    border-radius:15px;
 }
 div.une-slide{
     background-color: #00000078;
@@ -237,8 +240,12 @@ div.une-slide{
 }
 div.une-slide img{
     height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
-
+img.fleche-1:hover,img.fleche-2:hover{
+    cursor: pointer;
+}
 .texte{
     padding: 20px 20px 0 30px;
     width:auto;
