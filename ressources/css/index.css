@@ -30,7 +30,7 @@ header#header{
 .nav-bar{
     margin: 0 102px;
     padding: 0 60px 0 60px;
-    height: 18%;
+    height: 15%;
     border-bottom: 3.5px #c8c6ca30 solid ;
     border-left: 3.5px #c8c6ca30 solid ;
     border-right: 3.5px #c8c6ca30 solid ;
@@ -76,7 +76,7 @@ header#header{
 article.welcome-banner{
     margin:0 102px;
     /* height: 100%; */
-    height:81.7%;
+    height:84.7%;
     border-left: 3.5px #c8c6ca30 solid ;
     border-right: 3.5px #c8c6ca30 solid ;
     display:flex;
@@ -293,7 +293,7 @@ div.une-slide p{
 
  article#formulaire-contact{
     margin:0;
-    height: 120vh;
+    height: 125vh;
     background-image: linear-gradient(130deg,#EDDEBF,#19587D 70% );
 }
 #formulaire-contact .formulaire-wrapper{
@@ -307,7 +307,7 @@ div.une-slide p{
     z-index:1;
     text-align: center;
 } 
-#formulaire-contact .formulaire-wrapper form h3{
+#formulaire-contact .formulaire-wrapper form h3,#formulaire-contact .formulaire-wrapper form h3 label{
    color:white;
     font-weight: lighter;
     font-size: 25px;
@@ -343,4 +343,101 @@ div.une-slide p{
 }
 #formulaire-contact .formulaire-wrapper form select#frequence option{
     background-color: transparent;
+}
+#form-btn-news{
+    margin-top:40px;
+    margin-bottom:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+#form-btn-news .choix-news{
+    padding: 10px 40px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+    border-image: linear-gradient(120deg,#EDDEBF,#19587D ) 1;
+    cursor: pointer;
+}
+
+article#formulaire-contact  #btn-group{
+    padding-top:20px;
+   display: flex;
+   justify-content: center;
+}
+
+
+
+article#citation-slider{
+    padding: 250px 250px 300px 250px;
+    position:relative;
+}
+article#citation-slider article#citation{
+    text-align: center;
+}
+article#citation-slider article#citation blockquote{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+}
+article#citation-slider article#citation p{
+    font-size: 13px;
+    color: #ffffffb4;
+    line-height: 30px;
+    font-weight: lighter;
+}
+article#citation-slider img#guillemet-1,article#citation-slider img#guillemet-2{
+    position:absolute;
+}
+article#citation-slider img#guillemet-1{
+    top:15%;
+    left:15%;
+}
+article#citation-slider img#guillemet-2{
+    bottom:15%;
+    right:15%;
+}
+article#citation-slider section#bouton-slider{
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+}
+article#citation-slider section#bouton-slider .point-next{
+    margin:5px;
+    width:5px;
+    height:5px;
+    border:solid #19587D 1px;
+    border-radius:100px;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+article#citation-slider section#bouton-slider .point-next:hover,article#citation-slider section#bouton-slider .point-next.active{
+    background-color: #19587D;
+    border:solid #19587D 1px;
+    border-radius:100px;
+}
+footer{
+       margin: 0 102px;
+        padding:50px 0 130px 0;
+        border-left: 3.5px #c8c6ca30 solid ;
+        border-right: 3.5px #c8c6ca30 solid ;
+    text-align: center;    
+}
+footer p{
+    font-size: 10px;
+    margin: 0 0 40px 0;
+}
+footer p:first-child img{
+    transform: translate(-8px,8px);
+}
+footer .groupe-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2%;
+}
+
+footer .groupe-logo img:hover{
+   filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(1300%) hue-rotate(357deg);
 }
