@@ -256,16 +256,20 @@
     </article>
     <article id="formulaire-contact">
         <!-- à remplir aussi-->
+        <div class="formulaire-wrapper">
+
         <h2 id="formulaire">prenons contact</h2>
+        <br><br><br>
         <form >
             <h3><label for="email">ADDRESS EMAIL</label></h3>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" placeholder="Adresse email">
+          <br><br>
             <h3>NEWSLETTER</h3>
-            <label for="recevoir-actualite">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de 
+            <label for="recevoir-actualite">En cochant cette case vous acceptez de recevoir l’actualité concernant les <br> aventures de 
                 Batman :
             </label>
             <input type="checkbox" name="actualite" id="recevoir-actualite">
-            <br>
+            <br> <br>
             <select name="frequence" id="frequence" >
                 <option value="" selected>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
                 <option value="52">Une fois par semaine</option>
@@ -274,6 +278,7 @@
                 <option value="4">Une fois tous les trois mois </option>
                 <option value="2">Une fois tous les six mois </option>
             </select>
+            <br><br>
             <label id="type-de-news">Souhaitez vous recevoir des news</label>
             <div id="form-btn-news">
                 <div class="choix-news">Des films</div>
@@ -282,8 +287,13 @@
             </div>
             <h3>MESSAGE</h3>
             <input type="text" placeholder="Laissez un commentaire pour la communauté"> 
-            <button type="submit" id="btn-top-home">CONFIRMER</button>      
+            <br>
+            <section id="btn-group">
+                <button type="submit" id="btn-top-home">CONFIRMER</button>      
+            </section>
         </form>
+    </div>
+
     </article>
 
     <article id="citation-slider">
