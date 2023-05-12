@@ -127,7 +127,7 @@ article.welcome-banner{
     justify-content: center;
     gap:24px;
 }
-article#batman-cinema{
+article#batman-cinema,article#multimedia{
     margin: 0 102px;
     padding:50px 100px 180px 100px;
     border-left: 3.5px #c8c6ca30 solid ;
@@ -138,6 +138,7 @@ article h2{
     font-size:30px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    z-index:-1;
     
 }
 article h2{
@@ -185,4 +186,31 @@ article#nemesis h2 #bat-droite{
     position:absolute;
     top:-300px;
     right:-208px;
+}
+article#justice-league{
+    margin: 0 102px;
+    padding:50px 70px 180px 130px;
+    height:100vh;
+    border-left: 3.5px #c8c6ca30 solid ;
+    border-right: 3.5px #c8c6ca30 solid ;
+    position:relative;
+    z-index:-2;
+}
+article#justice-league p{
+    text-align: justify;
+    font-size: 21px;
+    font-family: Grotesk;
+    line-height: 30px;
+    box-sizing: border-box;
+    max-width: 90%;
+}
+article#justice-league img{
+    position:absolute;
+    width:calc(100% + 210px);
+    left:-105px;
+    z-index:-1;
+}
+article#multimedia{
+    padding-top: 100px;
+    position:relative;
 }
