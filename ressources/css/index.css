@@ -18,17 +18,19 @@ body{
     color:white;
     background-color: #000;
     font-family: Grotesk;
+    overflow-x: hidden;
+
 }
 
 header#header{
-    height:123vh;
+    height: 900px;
     background-image: url("../image/illustrations/Bathome1.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .nav-bar{
-    margin: 0 102px;
+    margin: 0 8%;
     padding: 0 60px 0 60px;
     height: 15%;
     border-bottom: 3.5px #c8c6ca30 solid ;
@@ -74,7 +76,7 @@ header#header{
 }
 
 article.welcome-banner{
-    margin:0 102px;
+    margin:0 8%;
     /* height: 100%; */
     height:84.7%;
     border-left: 3.5px #c8c6ca30 solid ;
@@ -120,7 +122,7 @@ article.welcome-banner{
 #sticky-section{
     position: fixed;
     top:50vh;
-    right:50px;
+    right:4.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,7 +134,7 @@ article.welcome-banner{
    filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(1300%) hue-rotate(357deg);
 }
 article#batman-cinema,article#multimedia,article#citation-slider{
-    margin: 0 102px;
+    margin: 0 8%;
     padding:50px 100px 180px 100px;
     border-left: 3.5px #c8c6ca30 solid ;
     border-right: 3.5px #c8c6ca30 solid ;
@@ -161,20 +163,24 @@ article#batman-cinema p, article#nemesis p{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap:5%;
 }
 #batman-cinema-image figcaption{
     margin-top:20px;
     text-align: center;
 }
 .bat-image{
+    max-width: 34%;
     transition: all ease-in-out 0.3s;
 }
 .bat-image:hover{
     transform: scale(1.2);
 }
-
+.bat-image img{
+    width:100%;
+}
 article#nemesis{
-    margin: 0 102px;
+    margin: 0 8%;
     padding:30px 100px 180px 100px;
     border-left: 3.5px #c8c6ca30 solid ;
     border-right: 3.5px #c8c6ca30 solid ;
@@ -188,13 +194,13 @@ article#nemesis h2 #bat-truc{
 article#nemesis h2 #bat-droite{
     height:300px; 
     position:absolute;
-    top:-300px;
+    top:-250px;
     right:-208px;
 }
 article#justice-league{
-    margin: 0 102px;
+    margin: 0 8%;
     padding:50px 70px 180px 130px;
-    height:100vh;
+    height:750px;
     border-left: 3.5px #c8c6ca30 solid ;
     border-right: 3.5px #c8c6ca30 solid ;
     position:relative;
@@ -210,13 +216,13 @@ article#justice-league p{
 }
 article#justice-league img{
     position:absolute;
-    width:calc(100% + 210px);
-    left:-105px;
+    width:125%;
+    left:-16%;
     z-index:-1;
 }
 article#multimedia{
     padding-top: 100px;
-    padding-bottom: 250px;;
+    padding:100px 2% 250px 2%;
     position:relative;
 }
 section#multimedia-slider{
@@ -224,6 +230,7 @@ section#multimedia-slider{
     display:flex;
     justify-content: space-around;
     align-items: center;
+    gap:5%;
 }
 #slider-contener{
     max-width:650px;
@@ -248,7 +255,7 @@ img.fleche-1:hover,img.fleche-2:hover{
     cursor: pointer;
 }
 .texte{
-    padding: 20px 20px 0 30px;
+    padding: 4% 3% 0 4%;
     width:auto;
 }
 div.une-slide h2.slide-caption{
@@ -293,12 +300,12 @@ div.une-slide p{
 
  article#formulaire-contact{
     margin:0;
-    height: 125vh;
+    height: 900px;
     background-image: linear-gradient(130deg,#EDDEBF,#19587D 70% );
 }
 #formulaire-contact .formulaire-wrapper{
     height: 100%;
-    padding: 50px 300px;
+    padding: 50px 13%;
     color:#ffffffa6;
     background: #04040483;
 }
@@ -315,7 +322,7 @@ div.une-slide p{
     font-family:rajdhani;
 }
 
-#formulaire-contact .formulaire-wrapper form input:not(#recevoir-actualite),#formulaire-contact .formulaire-wrapper form select{
+#formulaire-contact .formulaire-wrapper form input:not(#recevoir-actualite):not(#choix_film),#formulaire-contact .formulaire-wrapper form select{
     width:100%;
     height: 25px;
     color:white;
@@ -342,8 +349,12 @@ div.une-slide p{
     background-color: transparent;
 }
 #formulaire-contact .formulaire-wrapper form select#frequence option{
+    padding: 10px 5px;
+    min-height: 50px;  
+    color:black;
     background-color: transparent;
 }
+
 #form-btn-news{
     margin-top:40px;
     margin-bottom:40px;
@@ -357,10 +368,21 @@ div.une-slide p{
     border-style: solid;
     border-width: 2px;
     border-radius: 4px;
-    border-image: linear-gradient(120deg,#EDDEBF,#19587D ) 1;
+    border-image: linear-gradient(130deg,#EDDEBF,#19587D ) 1;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
+#form-btn-news .choix-news:hover{
+    border-image: linear-gradient(-20deg,#EDDEBF,#19587D ) 1;
+}
+#form-btn-news .choix-news:active{
+    transition-duration: 0.1s;
+    border-image: linear-gradient(130deg,#EDDEBF,#19587D ) 1;
+}
+#choix-filmt{
+    display: none;
+}
 article#formulaire-contact  #btn-group{
     padding-top:20px;
    display: flex;
@@ -382,7 +404,7 @@ article#citation-slider article#citation blockquote{
     font-weight: 400;
 }
 article#citation-slider article#citation p{
-    font-size: 13px;
+    font-size: 12px;
     color: #ffffffb4;
     line-height: 30px;
     font-weight: lighter;
@@ -418,7 +440,7 @@ article#citation-slider section#bouton-slider .point-next:hover,article#citation
     border-radius:100px;
 }
 footer{
-       margin: 0 102px;
+       margin: 0 8%;
         padding:50px 0 130px 0;
         border-left: 3.5px #c8c6ca30 solid ;
         border-right: 3.5px #c8c6ca30 solid ;
@@ -440,4 +462,286 @@ footer .groupe-logo{
 
 footer .groupe-logo img:hover{
    filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(1300%) hue-rotate(357deg);
+}
+
+
+/* RESPONSIVE*/
+
+@media only screen and (max-width: 1050px) and (min-width:900px) {
+article.welcome-banner{
+    gap:10%;
+}
+section.intro-text p{
+    font-size:18px;
+}
+section.intro-text p strong{
+    font-size:20px;
+}
+.btn-top-home{
+    width: 200px;
+    height:40px;
+    font-size: 15px;
+}
+article#batman-cinema p, article#nemesis p{
+    font-size:15px;
+    line-height: 22px;
+}
+
+article#justice-league p{
+    font-size: 15px;
+    line-height: 22px;
+}
+article#nemesis h2 #bat-droite
+{
+    height: 250px;
+    top:-200px;
+}
+}
+@media only screen and (max-width: 900px) {
+   
+header#header{
+    height: 650px;
+}
+.nav-bar{
+    margin: 0 4%;
+    padding: 0 50px 0 50px;
+    height: 10%;
+}
+.nav-bar a img{
+    height:25px;
+}
+
+
+.nav-item{  
+    padding:0 2px;
+    height: 30px;
+    font-size: 20px;
+    list-style-type: none;
+    transition:all 0.5s;
+
+}
+
+
+article.welcome-banner{
+    margin:0 4%;
+    /* height: 100%; */
+    height:90%;
+    gap: 15%;
+}
+.intro-text{
+    font-size:16px;
+    line-height:25px ;
+}
+.intro-text strong{
+    font-size: 22px;
+}
+#btn-group{
+    display: flex;
+    gap:10%;
+}
+#btn-group a .btn-top-home,#btn-top-home{
+    width: 200px;
+    height:50px;
+    font-size: 20px;
+}
+    
+#sticky-section{
+    top:50vh;
+    right:0;
+    gap:20px;
+    z-index:100;
+}
+#sticky-section a img{
+    height:50px;
+}
+#sticky-section a img.social-sticky{
+    height:25px;
+}
+article#batman-cinema,article#justice-league,article#nemesis,article#multimedia,article#citation-slider{
+    margin: 0 4%;
+    padding:40px 40px 140px 40px;;
+}
+
+
+
+    
+article h2{
+    font-size:24px;
+    letter-spacing: 2px;
+}
+article#batman-cinema p, article#nemesis p,article#justice-league p{
+    font-size: 15px;
+    font-family: Grotesk;
+    line-height: 20px;
+    box-sizing: border-box;
+    max-width: 85%;
+}
+
+.bat-image figcaption{
+    font-size:12px;
+}
+.bat-image:hover{
+    transform: scale(1.2);
+}
+.bat-image img{
+    width:100%;
+}
+
+article#nemesis h2 #bat-truc{
+    height:80px; 
+    top:-50px;
+    left:80px;
+}
+article#nemesis h2 #bat-droite{
+    height:200px; 
+    top:-150px;
+    right:-70px;
+}
+article#justice-league{
+    padding:50px 70px 180px 130px;
+    height:500px;
+    position:relative;
+    z-index:-2;
+}
+
+article#justice-league img{
+    position:absolute;
+    width:125%;
+    left:-16%;
+    z-index:-1;
+}
+article#multimedia{
+    padding:100px 2% 100px 2%;
+    position:relative;
+}
+section#multimedia-slider{
+    margin-bottom: 100px;
+    gap:5%;
+}
+#slider-contener{
+    width:500px;
+    height:200px;
+}
+
+div.une-slide img{
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+img.fleche-1:hover,img.fleche-2:hover{
+    cursor: pointer;
+}
+
+div.une-slide h2.slide-caption{
+    margin-bottom: 5px;
+    font-size: 8px;
+}
+div.une-slide h2.slide-title{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+div.une-slide .imdb{
+    font-size: 14px;
+    margin-bottom:7px;
+}
+
+div.une-slide p{
+    font-size:10px;
+    line-height: 12px;
+}
+#bande-annonce{
+    height: 362px;
+}
+
+
+ article#formulaire-contact{
+    margin:0;
+    height: 800px;
+}
+#formulaire-contact .formulaire-wrapper{
+    height: 100%;
+    padding: 50px 13%;
+    color:#ffffffa6;
+    background: #04040483;
+}
+#formulaire-contact .formulaire-wrapper h2{
+    font-size: 22px;
+} 
+#formulaire-contact .formulaire-wrapper form h3,#formulaire-contact .formulaire-wrapper form h3 label{
+    font-size: 18px;
+    margin: 15px 0;
+    font-family:rajdhani;
+}
+
+#formulaire-contact .formulaire-wrapper form input:not(#recevoir-actualite):not(#choix_film),#formulaire-contact .formulaire-wrapper form select{
+    font-size: 18px;
+}
+#formulaire-contact .formulaire-wrapper form label{
+    font-size: 15px;
+    line-height: 18px;
+}
+
+#formulaire-contact .formulaire-wrapper form select#frequence{
+    font-size: 15px;
+
+}
+#formulaire-contact .formulaire-wrapper form select#frequence option{
+    font-size: 15px;
+}
+
+#form-btn-news{
+    gap:20px;
+}
+
+article#formulaire-contact  #btn-group{
+    padding-top:10px;
+}
+
+article#citation-slider{
+    padding: 150px 5% 200px 5%;
+    position:relative;
+}
+article#citation-slider article#citation{
+    text-align: center;
+}
+article#citation-slider article#citation blockquote{
+    font-size: 18px;
+    line-height: 25px;
+}
+article#citation-slider article#citation p{
+    font-size: 12px;
+    line-height: 24px;
+}
+article#citation-slider img#guillemet-1,article#citation-slider img#guillemet-2{
+    height: 50px;
+}
+article#citation-slider img#guillemet-1{
+    top:8%;
+    left:8%;
+}
+article#citation-slider img#guillemet-2{
+    bottom:15%;
+    right:15%;
+}
+
+footer{
+       margin: 0 4%;
+}
+footer p{
+    font-size: 8px;
+    margin: 0 0 40px 0;
+}
+footer p:first-child img{
+    transform: translate(-8px,8px);
+}
+footer .groupe-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2%;
+}
+
+footer .groupe-logo img:hover{
+   filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(1300%) hue-rotate(357deg);
+}
 }
